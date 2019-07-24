@@ -19,6 +19,9 @@
 
 echo "Starting bootstrapping"
 
+# install Xcode CLI
+xcode-select —-install
+
 # Check for Homebrew, install if we don't have it
 if test ! $(which brew); then
     echo "Installing homebrew..."
@@ -42,6 +45,10 @@ brew install findutils
 
 # Install ZSH
 brew install zsh
+
+# install OM-MY-ZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+upgrade_oh_my_zsh
 
 PACKAGES=(
     pipenv
@@ -103,6 +110,9 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Disable "natural" scroll
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+# make autohide from Dock faster
+defaults write com.apple.dock autohide-time-modifier -float 0.15;killall Dock
 
 echo "Creating folder structure..."
 [[ ! -d Repos ]] && mkdir Repos 
