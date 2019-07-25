@@ -14,7 +14,7 @@ The `app_installer.sh` script use `mas` to install apps from the Apple Appstore.
 Use `mas search {Appname}` to find the number of a particular app and add it to `APPSTORE` list in the script.
 
 ## usage of vscode_installer
-add the name of extension by add the names form the store.
+Look for the name of the autor and the package
 Example: 
 Python extansion is => `ms-python.python`
 
@@ -28,7 +28,3 @@ Activating theme
 3. Select Import... from the list
 4. Select the Dracula.itermcolors file
 5. Select the Dracula from Color Presets...
-
-## alias
-Look at the alias file for some usefull shortcuts.
-Some of them are replacemens for standart tools like `bat` for `cat` and `lsd` for `ls`
