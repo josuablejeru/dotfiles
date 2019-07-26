@@ -60,6 +60,7 @@ PACKAGES=(
     vim
     wget
     go
+    java
 )
 
 echo "Installing packages..."
