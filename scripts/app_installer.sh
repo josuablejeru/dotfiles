@@ -13,6 +13,8 @@ APPSTORE=(
     441258766  # Magnet
     407963104  # Pixelmator
     1228059008 # ChatMate for WhatsApp
+	1333542190 # 1passsword
+	1333542190 # 1passsword
 )
 
 echo "Install apps from Appstore"
