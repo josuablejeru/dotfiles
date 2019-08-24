@@ -12,5 +12,6 @@ code --install-extension dracula-theme.theme-dracula
 code --install-extension ms-python.python
 code --install-extension ms-azuretools.vscode-docker 
 code --install-extension mauve.terraform
+code --install-extension editorconfig.editorconfig
 
 echo -e "Installer ist \e[5mFertig!"
