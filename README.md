@@ -28,3 +28,11 @@ Activating theme
 3. Select Import... from the list
 4. Select the Dracula.itermcolors file
 5. Select the Dracula from Color Presets...
+
+## Support for Oh_my_zsh plugins
+if autocompletion is not working try:
+```
+rm ~/.zcompdump*
+```
+and then restart the terminal
+
