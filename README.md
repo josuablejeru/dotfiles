@@ -6,8 +6,14 @@ This is a list how you shoud use the scripts
 3. `vscode_installer.sh`
 
 
-
-
+## git config
+Create a file with the name `~/.gitignore_global` with the contend
+```
+*~
+.*.swp
+.DS_Store
+```
+and run `git config --global core.excludesfile ~/.gitignore_global` and Git will never again bother you about those files.
 
 ## usage of mas
 The `app_installer.sh` script use `mas` to install apps from the Apple Appstore. 
@@ -35,4 +41,3 @@ if autocompletion is not working try:
 rm ~/.zcompdump*
 ```
 and then restart the terminal
-
