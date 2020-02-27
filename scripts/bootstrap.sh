@@ -61,10 +61,12 @@ PACKAGES=(
     wget
     go
     java
+    fzf
 )
 
 echo "Installing packages..."
 brew install ${PACKAGES[@]}
+$(brew --prefix)/opt/fzf/install
 
 echo "Cleaning up..."
 brew cleanup --prune
