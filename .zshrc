@@ -16,8 +16,6 @@ export ZSH="/Users/josuablejeru/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-# ZSH_THEME="af-magic"
-
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -75,7 +73,6 @@ plugins=(
   ng
   npm
   node
-	asdf
   docker-compose 
   docker
   brew
@@ -98,9 +95,6 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-# asdf
-echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -117,7 +111,7 @@ echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -134,6 +128,7 @@ alias reload="exec zsh"
 alias upgrade_oh_my_zsh="omz update"
 
 alias tf="terraform"
+alias d="docker"
 alias dc="docker-compose"
 alias k="kubectl"
 alias py="python3"
@@ -155,5 +150,3 @@ export NVM_DIR="$HOME/.nvm"
 autoload -Uz compinit
 compinit
 
-
-. /usr/local/opt/asdf/asdf.sh
