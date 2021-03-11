@@ -5,6 +5,11 @@ This is a list how you shoud use the scripts
 2. `app_installer.sh`
 3. `vscode_installer.sh`
 
+## manual simlink
+use this comand to simlink files
+```
+$ ln -s <path/.dotfile> ~/.<name-of-file>
+```
 
 ## git config
 Create a file with the name `~/.gitignore_global` with the contend
@@ -26,7 +31,7 @@ Python extansion is => `ms-python.python`
 
 ## iTerm2 theme 
 Install dracula theme from 
-`git clone https://github.com/dracula/iterm.git`
+`$ git clone https://github.com/dracula/iterm.git`
 
 Activating theme
 1. iTerm2 > Preferences > Profiles > Colors Tab
@@ -38,6 +43,6 @@ Activating theme
 ## Support for Oh_my_zsh plugins
 if autocompletion is not working try:
 ```
-rm ~/.zcompdump*
+$ rm ~/.zcompdump*
 ```
 and then restart the terminal
