@@ -8,8 +8,3 @@ HostName github.com
 User josuablejeru 
 IdentityFile ~/.ssh/id_rsa
 
-# Bitbucket (secondary)
-Host bb
-HostName bitbucket.org
-User git
-IdentityFile ~/.ssh/vitasai
