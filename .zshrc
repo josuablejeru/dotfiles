@@ -135,6 +135,8 @@ alias py="python3"
 alias ipy="ipython"
 alias ls="lsd"
 alias cat="bat"
+alias vim="nvim"
+alias vi="nvim"
 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
