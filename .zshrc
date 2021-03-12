@@ -122,8 +122,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias localhost="lsof -PiTCP -sTCP:LISTEN"
 
-alias zshconfig="vim ~/.zshrc"
-alias vimrc="vim ~/.vimrc"
+alias zshconfig="nvim ~/.zshrc"
+alias vimrc="nvim ~/.config/nvim/init.vim"
 alias reload="exec zsh"
 alias upgrade_oh_my_zsh="omz update"
 
@@ -142,10 +142,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Loads NVM and resolves a anoying bug
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Load fzf keybindings
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 autoload -Uz compinit
 compinit
