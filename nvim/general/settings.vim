@@ -42,3 +42,5 @@ set nowrap
 "let you use a mous for all modes
 set mouse=a
 
+" Copy paste between vim and everything else
+set clipboard=unnamedplus 
