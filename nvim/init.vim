@@ -7,3 +7,5 @@ source $HOME/.config/nvim/general/settings.vim
 " Keymappings configurations
 source $HOME/.config/nvim/keys/mappings.vim
 
+" load Onedark theme
+source $HOME/.config/nvim/themes/onedark.vim
