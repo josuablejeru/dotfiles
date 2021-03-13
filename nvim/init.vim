@@ -9,3 +9,6 @@ source $HOME/.config/nvim/keys/mappings.vim
 
 " load Onedark theme
 source $HOME/.config/nvim/themes/onedark.vim
+
+" Airline support
+source $HOME/.config/nvim/themes/airline.vim
