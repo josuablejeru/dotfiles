@@ -8,7 +8,11 @@ source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
 " load Onedark theme
-source $HOME/.config/nvim/themes/onedark.vim
+"source $HOME/.config/nvim/themes/onedark.vim
 
 " Airline support
 source $HOME/.config/nvim/themes/airline.vim
+
+" Plugin configurations
+source $HOME/.config/nvim/plug-config/coc.vim
+
