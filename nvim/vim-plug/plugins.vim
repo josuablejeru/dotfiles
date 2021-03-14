@@ -6,6 +6,8 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+
+
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
@@ -14,6 +16,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+
+    " Stable version of coc
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " Status line
     Plug 'vim-airline/vim-airline'
@@ -24,3 +29,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
 call plug#end()
+
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
+
