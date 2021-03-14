@@ -123,6 +123,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias localhost="lsof -PiTCP -sTCP:LISTEN"
 
 alias zshconfig="nvim ~/.zshrc"
+
+alias dotfiles="cd ~/dotfiles"
 alias vimrc="nvim ~/.config/nvim/init.vim"
 alias reload="exec zsh"
 alias upgrade_oh_my_zsh="omz update"
