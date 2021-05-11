@@ -117,18 +117,16 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias localhost="lsof -PiTCP -sTCP:LISTEN"
-
-alias zshconfig="nvim ~/.zshrc"
-
+# Directorys
 alias dotfiles="cd ~/dotfiles"
+
+# Config editing
+alias zshconfig="nvim ~/.zshrc"
 alias vimrc="nvim ~/.config/nvim/init.vim"
-alias reload="exec zsh"
+alias reload="source ~/.zshrc"
 alias upgrade_oh_my_zsh="omz update"
 
+# Tool shortcuts
 alias tf="terraform"
 alias d="docker"
 alias dc="docker-compose"
@@ -141,6 +139,11 @@ alias vim="nvim"
 alias vi="nvim"
 
 
+# Sys shortcuts
+alias localhost="lsof -PiTCP -sTCP:LISTEN"
+alias delete="rm -rf"
+
+######################################################
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -152,3 +155,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 autoload -Uz compinit
 compinit
 
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
