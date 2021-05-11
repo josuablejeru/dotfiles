@@ -4,8 +4,8 @@
 " Set leader key
 let g:mapleader = "\<Space>"
 
-" Stop newline continution of comments 
-set formatoptions-=cro 
+" Stop newline continution of comments
+set formatoptions-=cro
 
 "dont't have files trying to override this .vimrc:
 set nocompatible
@@ -46,5 +46,8 @@ set nowrap
 set mouse=a
 
 " Copy paste between vim and everything else
-set clipboard=unnamedplus 
+set clipboard=unnamedplus
 
+" Mark a trailing whitespace red
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
