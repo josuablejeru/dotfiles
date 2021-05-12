@@ -10,3 +10,9 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
 
+" Close nerdtree after open a new file
+let NERDTreeQuitOnOpen = 1
+
+" Remote 'Press ? for help'
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
