@@ -16,3 +16,7 @@ let NERDTreeQuitOnOpen = 1
 " Remote 'Press ? for help'
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+
+" Show hidden files and directorys
+let NERDTreeShowHidden=1
+
