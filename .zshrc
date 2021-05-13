@@ -142,6 +142,8 @@ alias vi="nvim"
 # Sys shortcuts
 alias localhost="lsof -PiTCP -sTCP:LISTEN"
 alias delete="rm -rf"
+# Shortcut to deactivate bluethooth quickly (pass 1 for 'on' / 2 for 'off')
+alias bluethooth="blueutil -p"
 
 ######################################################
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
