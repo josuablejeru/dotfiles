@@ -48,6 +48,9 @@ set mouse=a
 " Copy paste between vim and everything else
 set clipboard=unnamedplus
 
+" set encoding
+set encoding=UTF-8
+
 " Mark a trailing whitespace red
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
