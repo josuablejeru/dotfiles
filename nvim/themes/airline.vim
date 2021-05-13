@@ -12,6 +12,8 @@ let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
+" show the buffer number
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " Always show tabs
 set showtabline=2
@@ -19,3 +21,6 @@ set showtabline=2
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode
 
+" show me the git branch
+let g:airline#extensions#hunks#enabled=0
+let g:airline#extensions#branch#enabled=1
