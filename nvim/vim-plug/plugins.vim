@@ -33,6 +33,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " displays all changes done to a file
     Plug 'mhinz/vim-signify'
 
+    " Git vim wrapper
+    Plug 'tpope/vim-fugitive'
+
     call plug#end()
 
 " Automatically install missing plugins on startup

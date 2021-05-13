@@ -24,3 +24,4 @@ set noshowmode
 " show me the git branch
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
+let g:airline_section_b = '%branch'
