@@ -32,11 +32,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Theme
     Plug 'joshdick/onedark.vim'
 
-    " displays all changes done to a file
-    Plug 'mhinz/vim-signify'
-
     " Git vim wrapper
     Plug 'tpope/vim-fugitive'
+    Plug 'airblade/vim-gitgutter'
 
     call plug#end()
 
