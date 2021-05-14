@@ -37,6 +37,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
 
+    " Editor configuration based on .editorconfig
+    Plug 'editorconfig/editorconfig-vim'
+
     call plug#end()
 
 " Automatically install missing plugins on startup
