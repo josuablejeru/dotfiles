@@ -29,6 +29,7 @@ let python_higlight_all = 1
 "Spaces & Tabs
 set tabstop=2
 set softtabstop=2
+set expandtab
 
 "set linenumbers
 set number

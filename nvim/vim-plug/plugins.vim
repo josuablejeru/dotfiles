@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
+    Plug 'Yggdroot/indentLine'
 
     " File Explorer
     Plug 'scrooloose/NERDTree'
