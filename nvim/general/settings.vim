@@ -31,8 +31,8 @@ set tabstop=2
 set softtabstop=2
 set expandtab
 
-"set linenumbers
-set number
+"set hybride line numbers (relativ)
+set number relativenumber
 
 " show a visual line under the cursor´s current line
 set cursorline
