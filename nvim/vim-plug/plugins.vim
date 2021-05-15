@@ -40,6 +40,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Editor configuration based on .editorconfig
     Plug 'editorconfig/editorconfig-vim'
 
+    " find stuff
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+
     call plug#end()
 
 " Automatically install missing plugins on startup
