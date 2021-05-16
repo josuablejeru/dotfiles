@@ -73,7 +73,7 @@ plugins=(
   ng
   npm
   node
-  docker-compose 
+  docker-compose
   docker
   brew
   git
@@ -86,7 +86,12 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+### User configuration ###
+
+# golang
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
 
 # groovy home
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
