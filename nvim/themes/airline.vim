@@ -5,7 +5,7 @@ let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
 
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " enable powerline fonts
 let g:airline_powerline_fonts = 1

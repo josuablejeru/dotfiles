@@ -2,8 +2,8 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  "autocmd VimEnter * PlugInstall | source $MYVIMRC
+  autocmd VimEnter * PlugInstall
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 
@@ -36,6 +36,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Git vim wrapper
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
+    " Git Conflict highlighting
+    Plug 'rhysd/conflict-marker.vim'
 
     " Editor configuration based on .editorconfig
     Plug 'editorconfig/editorconfig-vim'
