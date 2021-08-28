@@ -3,6 +3,7 @@
     "css",
     "markdown",
     "javascript",
+    "typescript",
     "graphql",
     "html",
     "yaml",
@@ -18,8 +19,12 @@
   "snippets.ultisnips.directories":
   [
     "UltiSnips",
-    "~/.config/nvim/utils/snips"
-  ]
+    "~/dotfiles/nvim/utils/snips"
+  ],
 
+  // eslint
+  "eslint.packageManager": "yarn",
+  "eslint.nodePath": ".yarn/sdks",
+  "eslint.autoFixOnSave": true
 }
 
