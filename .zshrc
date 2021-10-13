@@ -75,6 +75,7 @@ plugins=(
   aws-mfa
   npm
   node
+  vi-mode
   docker-compose
   docker
   brew
@@ -90,15 +91,17 @@ source $ZSH/oh-my-zsh.sh
 
 ### User configuration ###
 
+# VIM: use vim keybindings in terminal.
+# this config changes the cursor to indicate multiple modes
+export VI_MODE_SET_CURSOR=true
+
+
 # golang
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
 
-# groovy home
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
-
-# Jenv
+# Jenv init
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
