@@ -158,6 +158,11 @@ alias bluethooth="blueutil -p"
 ######################################################
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Start the zsh auto-completion for kubectl. k is the alias used
+# https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/
+source <(kubectl completion zsh)
+compdef __start_kubectl k
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
