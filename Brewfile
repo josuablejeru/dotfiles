@@ -69,6 +69,8 @@ brew "zsh-autosuggestions"
 brew "aws/tap/aws-sam-cli"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# load .envrc from your environment
+brew "direnv"
 # AdoptOpenJDK OpenJDK (Java) Development Kit
 cask "adoptopenjdk8"
 # Memory training application

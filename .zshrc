@@ -180,3 +180,5 @@ export NVM_DIR="$HOME/.nvm"
 autoload -Uz compinit
 compinit
 
+eval "$(direnv hook zsh)"
+
