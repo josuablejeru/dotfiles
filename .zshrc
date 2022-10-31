@@ -129,6 +129,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # For a full list of active aliases, run `alias`.
 # Directorys
 alias dotfiles="cd ~/dotfiles"
+alias xplane="cd ~/Library/Application\ Support/Steam/steamapps/common/X-Plane\ 11"
 
 # Config editing
 alias zshconfig="nvim ~/.zshrc"
@@ -141,6 +142,7 @@ alias tf="terraform"
 alias d="docker"
 alias dc="docker-compose"
 alias k="kubectl"
+alias h="helm"
 alias py="python3"
 alias ipy="ipython3"
 alias ls="lsd"
